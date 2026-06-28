@@ -9,7 +9,7 @@ como material privado aunque sean de staging.
 - Nunca subas `.env*`, llaves, tokens, URLs de base de datos ni capturas que los muestren.
 - Usa `.env.local` para desarrollo local; se crea desde `.env.example` y está ignorado por Git.
 - Pide valores reales por el canal privado del equipo. No los pegues en issues, PRs, logs ni chat público.
-- Si una credencial se filtra, avísalo de inmediato por canal privado para rotarla. No intentes ocultarlo con force-push.
+- Si una credencial se filtra, avísalo de inmediato por canal privado para rotarla. No intentes ocultarlo con force-push: `gitleaks` corre automáticamente en CI y el secreto se considera comprometido aunque borres el commit.
 - Ante la duda, trata cualquier variable sin `NEXT_PUBLIC_` como secreta.
 
 ## Archivos locales
@@ -45,7 +45,7 @@ Públicas aceptables:
 Privadas, solo servidor:
 
 - `SUPABASE_SECRET_KEY` o `SUPABASE_SERVICE_ROLE_KEY`
-- `SUPABASE_DB_URL`
+- `SUPABASE_DB_URL` (solo como secreto de CI; no va en `.env.local`)
 - `OPENAI_API_KEY`
 - `FR_API_KEY`
 - API keys de socios, tokens de admin, webhooks y credenciales de deploy
