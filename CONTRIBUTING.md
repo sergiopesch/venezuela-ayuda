@@ -52,6 +52,11 @@ cp .env.example .env.local   # pide los valores al equipo (nunca subas .env*)
 npm run dev
 ```
 
+Antes de pedir o configurar credenciales, lee
+[`docs/colaboracion/manejo-de-secretos.md`](docs/colaboracion/manejo-de-secretos.md).
+Resume qué variables pueden exponerse al navegador, cuáles son solo de servidor y qué hacer
+si una clave se filtra.
+
 Antes de abrir un PR, en local debe pasar:
 
 ```bash

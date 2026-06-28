@@ -36,6 +36,7 @@
 - [Estrategia de ramas y protección](colaboracion/estrategia-de-ramas-y-proteccion.md) — modelo `feat → staging → main`, protección de ramas, QA
 - [Gestión de issues](colaboracion/gestion-de-issues.md) — **cómo reclamar un issue**, labels, ciclo de vida, triage
 - [Gestión de migraciones](colaboracion/gestion-de-migraciones.md) — convenciones y proceso para cambios de DB
+- [Manejo de secretos](colaboracion/manejo-de-secretos.md) — `.env.local`, variables públicas/privadas y rotación
 - [Canales de comunicación](colaboracion/canales-de-comunicacion.md) — dónde hablar de cada tema
 - [Gobernanza](colaboracion/gobernanza.md) — roles, permisos, toma de decisiones
 - [Mejores prácticas de colaboración](colaboracion/00-mejores-practicas-colaboracion.md) — guía base con fuentes

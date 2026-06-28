@@ -24,6 +24,8 @@ posible y coordinaremos la divulgación una vez haya un arreglo.
 ## Reglas para contribuidores
 
 - No subas `.env*` ni secretos. Si filtras uno por error, **avisa de inmediato** para rotarlo.
+- Para configurar el entorno local, sigue la guía de
+  [manejo de secretos para contribuidores](docs/colaboracion/manejo-de-secretos.md).
 - No registres PII en logs ni la devuelvas por endpoints públicos.
 - Todo acceso de escritura requiere **2FA**.
 - Ante la duda con datos reales o con producción, **pregunta antes de actuar**.
